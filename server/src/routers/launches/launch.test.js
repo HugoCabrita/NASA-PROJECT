@@ -10,7 +10,7 @@ const {
 } = require ('../../models/planets.model');
 
 describe ('Launches API',() => {
-  beforeAll(() => {
+  beforeAll(async () => {
     await mongoConnect();
     await loadPlanets();
   });
