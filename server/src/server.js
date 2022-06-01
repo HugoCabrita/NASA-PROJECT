@@ -6,7 +6,7 @@ const app =require('./app.js');
 const {loadPlanets} = require('./models/planets.model.js');
 const {loadLaunchesData} = require('./models/launches.model.js');
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8000;
 
 const server = http.createServer(app);
 
